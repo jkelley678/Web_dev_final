@@ -22,6 +22,13 @@ const STRINGS = {
       contact:      "Contact",
       langSwitcher: "Language",
     },
+    hero: {
+    greeting:     "Hi, I'm",
+    name:         "Jackson Kelley",
+    tagline:      "Placeholder Placeholder Placeholder",
+    ctaPrimary:   "View My Work",
+    ctaSecondary: "Get in Touch",
+    },
   },
   es: {
     meta: {
@@ -38,6 +45,13 @@ const STRINGS = {
       contact:      "Contacto",
       langSwitcher: "Idioma",
     },
+    hero: {
+    greeting:     "Hola, soy",
+    name:         "Jackson Kelley",
+    tagline:      "Marcador Marcador Marcador",
+    ctaPrimary:   "Ver mi trabajo",
+    ctaSecondary: "Contáctame",
+    },
   },
   de: {
     meta: {
@@ -53,6 +67,13 @@ const STRINGS = {
       projects:     "Projekte",
       contact:      "Kontakt",
       langSwitcher: "Sprache",
+    },
+    hero: {
+    greeting:     "Hallo, ich bin",
+    name:         "Jackson Kelley",
+    tagline:      "Platzhalter Platzhalter Platzhalter",
+    ctaPrimary:   "Meine Arbeit ansehen",
+    ctaSecondary: "Kontakt aufnehmen",
     },
   },
 };
