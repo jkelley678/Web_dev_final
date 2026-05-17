@@ -175,6 +175,31 @@ ul, ol { list-style: none; }
   color: var(--color-text);
   border-color: var(--color-border);
 }
-.btn-secondary:hover { border-color: var(--color-text); }
+.btn-secondary:hover { 
+    border-color: var(--color-text); 
+}
+
+.site-section {
+  padding-block: var(--section-padding);
+  border-top: var(--border-width) solid var(--color-border);
+}
+
+.section-label {
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  display: block;
+  margin-bottom: var(--space-sm);
+}
+
+.section-heading { margin-bottom: var(--space-xl); }
+
+#about .about-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-xl);
+}
 
 
