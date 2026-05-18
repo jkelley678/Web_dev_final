@@ -77,12 +77,20 @@ form.addEventListener("submit", async (e) => {
     message: form.elements["message"].value.trim(),
   };
 
+  console.log("Sending data:", data);
+
   try {
     const res = await fetch("https://formspree.io/f/meedqkyj", {
       method:  "POST",
       headers: { "Content-Type": "application/json", "Accept": "application/json" },
       body:    JSON.stringify(data),
     });
+
+    console.log("Response status:", res.status);
+    console.log("Response ok:", res.ok);
+
+    const responseBody = await res.json();
+    console.log("Response body:", responseBody);
 
     if (res.ok) {
       status.hidden = false;
@@ -91,7 +99,8 @@ form.addEventListener("submit", async (e) => {
     } else {
       throw new Error("Non-OK response");
     }
-  } catch {
+  } catch (err) {
+    console.error("Error:", err);
     status.hidden = false;
     status.textContent = getString(currentLang, "contact.form.errorMessage");
   }
