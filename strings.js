@@ -38,6 +38,44 @@ const STRINGS = {
         "Placeholder paragraph three — mention interests, side projects, or anything that makes you you.",
       ],
     },
+    resume: {
+      sectionLabel:  "Résumé",
+      heading:       "Experience & Education",
+      downloadLabel: "Download PDF",
+      downloadHref:  "Resume.pdf",
+      PI: {
+        heading: "Personal Interests",
+        items: [
+          {
+            role:    "Volleyball",
+            company: "Placeholder Company",
+            period:  "2021 – Current",
+            bullets: [
+              "Fist sport I truly loved",
+              "Played middle blocker the entire time, although would love to be a rightside hitter",
+              "Ball is Life",
+            ],
+          },
+          {
+            role:    "Fishing",
+            company: "Placeholder Company",
+            period:  "2018 – Current",
+            bullets: [
+              "Taught me patience, happiness, dissapointment, and many other emotions",
+              "Biggest fish I ever caugh was a 47 inch lingcod. The biggest fish I lost was a 70-80lb halibut.",
+            ],
+          },
+        ],
+      },
+      albums: {
+        heading: "Favorite Albums",
+        items: [
+          { title: "To Pimp A Butterfly",   artist: "Kendrick Lamar", img: "TPAB.webp" },
+          { title: "Mushroom Sex Death Bummer Party",   artist: "Wine Lips", img: "MSDBP.jpg" },
+          { title: "Flee", artist: "The Jeremy Spencer Band", img: "Flee.jpg" },
+        ],
+      },
+    },
   },
   es: {
     meta: {
@@ -70,6 +108,44 @@ const STRINGS = {
         "Párrafo de marcador tres — menciona intereses, proyectos paralelos o lo que te hace único.",
       ],
     },
+    resume: {
+      sectionLabel:  "Currículum",
+      heading:       "Experiencia y educación",
+      downloadLabel: "Descargar PDF",
+      downloadHref:  "Resume.pdf",
+      experience: {
+        heading: "Experiencia",
+        items: [
+          {
+            role:    "Puesto de marcador",
+            company: "Empresa de marcador",
+            period:  "Mes Año – Mes Año",
+            bullets: [
+              "Responsabilidad o logro de marcador uno.",
+              "Responsabilidad o logro de marcador dos.",
+              "Responsabilidad o logro de marcador tres.",
+            ],
+          },
+          {
+            role:    "Puesto de marcador",
+            company: "Empresa de marcador",
+            period:  "Mes Año – Mes Año",
+            bullets: [
+              "Responsabilidad o logro de marcador uno.",
+              "Responsabilidad o logro de marcador dos.",
+            ],
+          },
+        ],
+      },
+      albums: {
+        heading: "Álbumes favoritos",
+        items: [
+          { title: "Album Title One",   artist: "Artist Name", img: "/assets/album_1.jpeg" },
+          { title: "Album Title Two",   artist: "Artist Name", img: "/assets/album_2.jpeg" },
+          { title: "Album Title Three", artist: "Artist Name", img: "/assets/album_3.jpeg" },
+        ],
+      },
+    },
   },
   de: {
     meta: {
@@ -101,6 +177,44 @@ const STRINGS = {
         "Platzhalter-Absatz zwei — erzähle von deinem Hintergrund, deiner Ausbildung oder deinem Weg in dein Fachgebiet.",
         "Platzhalter-Absatz drei — erwähne Interessen, Nebenprojekte oder das, was dich einzigartig macht.",
       ],
+    },
+    resume: {
+      sectionLabel:  "Lebenslauf",
+      heading:       "Erfahrung & Ausbildung",
+      downloadLabel: "PDF herunterladen",
+      downloadHref:  "Resume.pdf",
+      experience: {
+        heading: "Erfahrung",
+        items: [
+          {
+            role:    "Platzhalter-Position",
+            company: "Platzhalter-Unternehmen",
+            period:  "Monat Jahr – Monat Jahr",
+            bullets: [
+              "Platzhalter Verantwortung oder Leistung eins.",
+              "Platzhalter Verantwortung oder Leistung zwei.",
+              "Platzhalter Verantwortung oder Leistung drei.",
+            ],
+          },
+          {
+            role:    "Platzhalter-Position",
+            company: "Platzhalter-Unternehmen",
+            period:  "Monat Jahr – Monat Jahr",
+            bullets: [
+              "Platzhalter Verantwortung oder Leistung eins.",
+              "Platzhalter Verantwortung oder Leistung zwei.",
+            ],
+          },
+        ],
+      },
+      albums: {
+        heading: "Lieblingsalben",
+        items: [
+          { title: "Album Title One",   artist: "Artist Name", img: "/assets/album_1.jpeg" },
+          { title: "Album Title Two",   artist: "Artist Name", img: "/assets/album_2.jpeg" },
+          { title: "Album Title Three", artist: "Artist Name", img: "/assets/album_3.jpeg" },
+        ],
+      },
     },
   },
 };

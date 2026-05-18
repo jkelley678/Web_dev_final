@@ -17,7 +17,7 @@
 
 
 
-        <ul class="nav-links" id="nav-links" role="list">
+        <ul class="nav-links" id="nav-links">
           <li><a href="#about"    data-string="nav.about">About</a></li>
           <li><a href="#resume"   data-string="nav.resume">Résumé</a></li>
           <li><a href="#projects" data-string="nav.projects">Projects</a></li>
@@ -25,7 +25,7 @@
         </ul>
 
         <nav class="lang-switcher" aria-label="Language switcher">
-          <ul role="list">
+          <ul>
             <li><button class="lang-btn is-active" data-lang="en" aria-current="true"  aria-label="English">EN</button></li>
             <li><button class="lang-btn"           data-lang="es" aria-current="false" aria-label="Español">ES</button></li>
             <li><button class="lang-btn"           data-lang="de" aria-current="false" aria-label="Deutsch">DE</button></li>
@@ -82,6 +82,82 @@
         </div>
     </div>
     </section>
+    <section id="resume" class="site-section" aria-labelledby="resume-heading">
+        <div class="container">
+
+            <div class="section-heading">
+            <span class="section-label" data-string="resume.sectionLabel">Résumé</span>
+            <h2 id="resume-heading" data-string="resume.heading">Experience &amp; Education</h2>
+            </div>
+
+            <a href="Resume.pdf" class="btn btn-secondary resume-download"
+            data-string="resume.downloadLabel" download>Download PDF</a>
+
+            <div class="resume-layout">
+
+            <div>
+                <section aria-labelledby="resume-exp-heading">
+                <h3 id="resume-exp-heading" class="resume-group-heading"
+                    data-string="resume.PI.heading">Experience</h3>
+                <ol class="resume-experience">
+
+                    <li class="resume-item">
+                    <div class="resume-item-header">
+                        <span class="resume-item-role"   data-string="resume.PI.items.0.role">Placeholder Interest</span>
+                        <span class="resume-item-period"  data-string="resume.PI.items.0.period">Month Year – Month Year</span>
+                    </div>
+                    <ul class="resume-item-bullets">
+                        <li data-string="resume.PI.items.0.bullets.0">Placeholder one.</li>
+                        <li data-string="resume.PI.items.0.bullets.1">Placeholder two.</li>
+                        <li data-string="resume.PI.items.0.bullets.2">Placeholder three.</li>
+                    </ul>
+                    </li>
+
+                    <li class="resume-item">
+                    <div class="resume-item-header">
+                        <span class="resume-item-role"   data-string="resume.PI.items.1.role">Placeholder Interest</span>
+                        <span class="resume-item-period"  data-string="resume.PI.items.1.period">Month Year – Month Year</span>
+                    </div>
+                    <ul class="resume-item-bullets">
+                        <li data-string="resume.PI.items.1.bullets.0">Placeholder one.</li>
+                        <li data-string="resume.PI.items.1.bullets.1">Placeholder two.</li>
+                    </ul>
+                    </li>
+
+                </ol>
+                </section>
+
+                <section aria-labelledby="resume-albums-heading" style="margin-top: var(--space-xl);">
+                    <h3 id="resume-albums-heading" class="resume-group-heading"
+                        data-string="resume.albums.heading">Favorite Albums</h3>
+
+                    <div class="album-grid">
+
+                        <div class="album-item">
+                        <img src="TPAB.webp" alt="To Pimp A Butterfly" loading="lazy" width="300" height="300" data-string-alt="resume.albums.items.0.title" />
+                        <p class="album-title"  data-string="resume.albums.items.0.title">To Pimp A Butterfly</p>
+                        <p class="album-artist" data-string="resume.albums.items.0.artist">Kendrick Lamar</p>
+                        </div>
+
+                        <div class="album-item">
+                        <img src="MSDBP.jpg" alt="Mushroom Sex Death Bummer Party" loading="lazy" width="300" height="300" data-string-alt="resume.albums.items.1.title" />
+                        <p class="album-title"  data-string="resume.albums.items.1.title">Mushroom Sex Death Bummer Party</p>
+                        <p class="album-artist" data-string="resume.albums.items.1.artist">Wine Lips</p>
+                        </div>
+
+                        <div class="album-item">
+                        <img src="Flee.jpg" alt="Flee" loading="lazy" width="300" height="300" data-string-alt="resume.albums.items.2.title" />
+                        <p class="album-title"  data-string="resume.albums.items.2.title">Flee</p>
+                        <p class="album-artist" data-string="resume.albums.items.2.artist">The Jeremy Spencer Band</p>
+                        </div>
+
+                    </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 
   </main>
