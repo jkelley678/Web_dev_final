@@ -43,21 +43,6 @@ document.addEventListener("DOMContentLoaded", () => {
     btn.addEventListener("click", () => switchLang(btn.dataset.lang));
   });
 
-  const navToggle = document.querySelector(".nav-toggle");
-  const navLinks  = document.querySelector(".nav-links");
-
-  navToggle.addEventListener("click", () => {
-    const isOpen = navLinks.classList.toggle("is-open");
-    navToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
-  });
-
-  navLinks.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", () => {
-      navLinks.classList.remove("is-open");
-      navToggle.setAttribute("aria-expanded", "false");
-    });
-  });
-
   const yearEl = document.getElementById("footer-year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
