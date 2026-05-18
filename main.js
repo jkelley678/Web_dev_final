@@ -2,6 +2,7 @@ import STRINGS, { SUPPORTED_LANGS } from "./strings.js";
 
 let currentLang = "en";
 
+/* ── String helpers ─────────────────────────────────────────── */
 function getString(lang, path) {
   const keys = path.split(".");
   let val = STRINGS[lang];
@@ -14,10 +15,11 @@ function getString(lang, path) {
 
 function applyStrings(lang) {
   document.documentElement.lang = lang;
-
   document.querySelectorAll("[data-string]").forEach((el) => {
-    const path = el.dataset.string;
-    el.textContent = getString(lang, path);
+    el.textContent = getString(lang, el.dataset.string);
+  });
+  document.querySelectorAll("[data-placeholder-string]").forEach((el) => {
+    el.placeholder = getString(lang, el.dataset.placeholderString);
   });
 }
 
@@ -36,10 +38,63 @@ function switchLang(lang) {
   setActiveLangButton(lang);
 }
 
-// Wire up lang buttons
 document.querySelectorAll(".lang-btn").forEach((btn) => {
   btn.addEventListener("click", () => switchLang(btn.dataset.lang));
 });
 
-// Run on load with default language
+const navToggle = document.querySelector(".nav-toggle");
+const navLinks  = document.querySelector(".nav-links");
+
+navToggle.addEventListener("click", () => {
+  const isOpen = navLinks.classList.toggle("is-open");
+  navToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+});
+
+navLinks.querySelectorAll("a").forEach((link) => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("is-open");
+    navToggle.setAttribute("aria-expanded", "false");
+  });
+});
+
+const yearEl = document.getElementById("footer-year");
+if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+const form     = document.getElementById("contact-form");
+const status   = document.getElementById("form-status");
+
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  if (!form.checkValidity()) {
+    form.reportValidity();
+    return;
+  }
+
+  const data = {
+    name:    form.elements["name"].value.trim(),
+    email:   form.elements["email"].value.trim(),
+    message: form.elements["message"].value.trim(),
+  };
+
+  try {
+    const res = await fetch("https://formspree.io/f/meedqkyj", {
+      method:  "POST",
+      headers: { "Content-Type": "application/json", "Accept": "application/json" },
+      body:    JSON.stringify(data),
+    });
+
+    if (res.ok) {
+      status.hidden = false;
+      status.textContent = getString(currentLang, "contact.form.successMessage");
+      form.reset();
+    } else {
+      throw new Error("Non-OK response");
+    }
+  } catch {
+    status.hidden = false;
+    status.textContent = getString(currentLang, "contact.form.errorMessage");
+  }
+});
+
 switchLang(currentLang);
