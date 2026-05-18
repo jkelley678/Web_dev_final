@@ -1,4 +1,5 @@
 import STRINGS, { SUPPORTED_LANGS } from "./strings.js";
+import { initWeatherWidget } from "./weather.js";
 
 let currentLang = "en";
 
@@ -93,5 +94,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   switchLang(currentLang);
+  initWeatherWidget(currentLang);
 
 });

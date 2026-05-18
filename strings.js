@@ -20,6 +20,7 @@ const STRINGS = {
       resume:       "Résumé",
       interests:     "Interests",
       contact:      "Contact",
+      weather:      "Weather",
       langSwitcher: "Language",
     },
     hero: {
@@ -76,6 +77,21 @@ const STRINGS = {
         ],
       },
     },
+      weather: {
+        sectionLabel:  "Weather",
+        heading:       "Current Conditions",
+        loading:       "Loading weather…",
+        error:         "Unable to load weather. Please try again later.",
+        wind:          "Wind",
+        feels:         "Feels like",
+        toggleF:       "°F",
+        toggleC:       "°C",
+        locations: [
+          { name: "San Diego, CA",     lat: 32.7157, lon: -117.1611 },
+          { name: "Seattle, WA",       lat: 47.6062, lon: -122.3321 },
+          { name: "Desolation Sound",  lat: 50.0833, lon: -124.7500 },
+        ],
+      },
     contact: {
       sectionLabel: "Contact",
       heading:      "Let's talk",
@@ -100,7 +116,7 @@ const STRINGS = {
       linkedinLabel:"LinkedIn",
     },
   },
-  es: {
+es: {
   meta: {
     siteTitle:       "Jackson Kelley",
     siteDescription: "Sitio personal de Jackson Kelley — desarrollador, creador.",
@@ -113,6 +129,7 @@ const STRINGS = {
     resume:       "Currículum",
     interests:    "Intereses",
     contact:      "Contacto",
+    weather:      "Clima",
     langSwitcher: "Idioma",
   },
   hero: {
@@ -141,7 +158,7 @@ const STRINGS = {
       items: [
         {
           role:    "Voleibol",
-          company: "",
+          company: "Placeholder Company",
           period:  "2021 – Actualidad",
           bullets: [
             "El primer deporte que realmente amé",
@@ -151,7 +168,7 @@ const STRINGS = {
         },
         {
           role:    "Pesca",
-          company: "",
+          company: "Placeholder Company",
           period:  "2018 – Actualidad",
           bullets: [
             "Me enseñó paciencia, felicidad, decepción y muchas otras emociones",
@@ -163,11 +180,26 @@ const STRINGS = {
     albums: {
       heading: "Álbumes Favoritos",
       items: [
-        { title: "To Pimp A Butterfly",              artist: "Kendrick Lamar",          img: "TPAB.webp"  },
-        { title: "Mushroom Sex Death Bummer Party",  artist: "Wine Lips",               img: "MSDBP.jpg"  },
-        { title: "Flee",                             artist: "The Jeremy Spencer Band", img: "Flee.jpg"   },
+        { title: "To Pimp A Butterfly", artist: "Kendrick Lamar", img: "TPAB.webp"  },
+        { title: "Mushroom Sex Death Bummer Party", artist: "Wine Lips", img: "MSDBP.jpg"  },
+        { title: "Flee", artist: "The Jeremy Spencer Band", img: "Flee.jpg"   },
       ],
     },
+  },
+  weather: {
+    sectionLabel:  "Clima",
+    heading:       "Condiciones actuales",
+    loading:       "Cargando clima…",
+    error:         "No se pudo cargar el clima. Por favor intenta más tarde.",
+    wind:          "Viento",
+    feels:         "Sensación térmica",
+    toggleF:       "°F",
+    toggleC:       "°C",
+    locations: [
+      { name: "San Diego, CA",    lat: 32.7157, lon: -117.1611 },
+      { name: "Seattle, WA",      lat: 47.6062, lon: -122.3321 },
+      { name: "Desolation Sound", lat: 50.0833, lon: -124.7500 },
+    ],
   },
   contact: {
     sectionLabel: "Contacto",
@@ -193,7 +225,6 @@ const STRINGS = {
     linkedinLabel:"LinkedIn",
   },
 },
-
 de: {
   meta: {
     siteTitle:       "Jackson Kelley",
@@ -207,6 +238,7 @@ de: {
     resume:       "Lebenslauf",
     interests:    "Interessen",
     contact:      "Kontakt",
+    weather:      "Wetter",
     langSwitcher: "Sprache",
   },
   hero: {
@@ -235,7 +267,7 @@ de: {
       items: [
         {
           role:    "Volleyball",
-          company: "",
+          company: "Placeholder Company",
           period:  "2021 – Heute",
           bullets: [
             "Der erste Sport, den ich wirklich liebte",
@@ -245,7 +277,7 @@ de: {
         },
         {
           role:    "Angeln",
-          company: "",
+          company: "Placeholder Company",
           period:  "2018 – Heute",
           bullets: [
             "Es lehrte mich Geduld, Freude, Enttäuschung und viele andere Gefühle",
@@ -257,11 +289,26 @@ de: {
     albums: {
       heading: "Lieblingsalben",
       items: [
-        { title: "To Pimp A Butterfly",              artist: "Kendrick Lamar",          img: "TPAB.webp"  },
-        { title: "Mushroom Sex Death Bummer Party",  artist: "Wine Lips",               img: "MSDBP.jpg"  },
-        { title: "Flee",                             artist: "The Jeremy Spencer Band", img: "Flee.jpg"   },
+        { title: "To Pimp A Butterfly", artist: "Kendrick Lamar", img: "TPAB.webp"  },
+        { title: "Mushroom Sex Death Bummer Party", artist: "Wine Lips", img: "MSDBP.jpg"  },
+        { title: "Flee", artist: "The Jeremy Spencer Band", img: "Flee.jpg"   },
       ],
     },
+  },
+  weather: {
+    sectionLabel:  "Wetter",
+    heading:       "Aktuelle Bedingungen",
+    loading:       "Wetter wird geladen…",
+    error:         "Wetter konnte nicht geladen werden. Bitte versuche es später erneut.",
+    wind:          "Wind",
+    feels:         "Gefühlt",
+    toggleF:       "°F",
+    toggleC:       "°C",
+    locations: [
+      { name: "San Diego, CA",    lat: 32.7157, lon: -117.1611 },
+      { name: "Seattle, WA",      lat: 47.6062, lon: -122.3321 },
+      { name: "Desolation Sound", lat: 50.0833, lon: -124.7500 },
+    ],
   },
   contact: {
     sectionLabel: "Kontakt",

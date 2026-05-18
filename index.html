@@ -18,10 +18,11 @@
 
 
         <ul class="nav-links" id="nav-links">
-          <li><a href="#about"    data-string="nav.about">About</a></li>
-          <li><a href="#resume"   data-string="nav.resume">Résumé</a></li>
-          <li><a href="#resume-exp-heading" data-string="nav.interests">Interests</a></li>
-          <li><a href="#contact"  data-string="nav.contact">Contact</a></li>
+            <li><a href="#about"    data-string="nav.about">About</a></li>
+            <li><a href="#resume"   data-string="nav.resume">Résumé</a></li>
+            <li><a href="#resume-exp-heading" data-string="nav.interests">Interests</a></li>
+            <li><a href="#weather"  data-string="nav.weather">Weather</a></li>
+            <li><a href="#contact"  data-string="nav.contact">Contact</a></li>
         </ul>
 
         <nav class="lang-switcher" aria-label="Language switcher">
@@ -162,6 +163,20 @@
             </div>
         </div>
     </section>
+    <section id="weather" class="site-section" aria-labelledby="weather-heading">
+        <div class="container">
+
+            <section-heading>
+            <span class="section-label" data-string="weather.sectionLabel">Weather</span>
+            <h2 id="weather-heading" data-string="weather.heading">Current Conditions</h2>
+            </section-heading>
+
+            <weather-widget>
+            <p class="weather-loading" data-string="weather.loading">Loading weather…</p>
+            </weather-widget>
+
+        </div>
+        </section>
     <section id="contact" class="site-section" aria-labelledby="contact-heading">
         <div class="container">
 
