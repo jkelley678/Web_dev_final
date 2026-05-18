@@ -2,7 +2,6 @@ import STRINGS, { SUPPORTED_LANGS } from "./strings.js";
 
 let currentLang = "en";
 
-/* ── String helpers ─────────────────────────────────────────── */
 function getString(lang, path) {
   const keys = path.split(".");
   let val = STRINGS[lang];
@@ -38,72 +37,76 @@ function switchLang(lang) {
   setActiveLangButton(lang);
 }
 
-document.querySelectorAll(".lang-btn").forEach((btn) => {
-  btn.addEventListener("click", () => switchLang(btn.dataset.lang));
-});
+document.addEventListener("DOMContentLoaded", () => {
 
-const navToggle = document.querySelector(".nav-toggle");
-const navLinks  = document.querySelector(".nav-links");
-
-navToggle.addEventListener("click", () => {
-  const isOpen = navLinks.classList.toggle("is-open");
-  navToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
-});
-
-navLinks.querySelectorAll("a").forEach((link) => {
-  link.addEventListener("click", () => {
-    navLinks.classList.remove("is-open");
-    navToggle.setAttribute("aria-expanded", "false");
+  document.querySelectorAll(".lang-btn").forEach((btn) => {
+    btn.addEventListener("click", () => switchLang(btn.dataset.lang));
   });
-});
 
-const yearEl = document.getElementById("footer-year");
-if (yearEl) yearEl.textContent = new Date().getFullYear();
+  const navToggle = document.querySelector(".nav-toggle");
+  const navLinks  = document.querySelector(".nav-links");
 
-const form     = document.getElementById("contact-form");
-const status   = document.getElementById("form-status");
+  navToggle.addEventListener("click", () => {
+    const isOpen = navLinks.classList.toggle("is-open");
+    navToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+  });
 
-form.addEventListener("submit", async (e) => {
-  e.preventDefault();
-
-  if (!form.checkValidity()) {
-    form.reportValidity();
-    return;
-  }
-
-  const data = {
-    name:    form.elements["name"].value.trim(),
-    email:   form.elements["email"].value.trim(),
-    message: form.elements["message"].value.trim(),
-  };
-
-  console.log("Sending data:", data);
-
-  try {
-    const res = await fetch("https://formspree.io/f/meedqkyj", {
-      method:  "POST",
-      headers: { "Content-Type": "application/json", "Accept": "application/json" },
-      body:    JSON.stringify(data),
+  navLinks.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("is-open");
+      navToggle.setAttribute("aria-expanded", "false");
     });
+  });
 
-    console.log("Response status:", res.status);
-    console.log("Response ok:", res.ok);
+  const yearEl = document.getElementById("footer-year");
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-    const responseBody = await res.json();
-    console.log("Response body:", responseBody);
+  const form   = document.getElementById("contact-form");
+  const status = document.getElementById("form-status");
 
-    if (res.ok) {
-      status.hidden = false;
-      status.textContent = getString(currentLang, "contact.form.successMessage");
-      form.reset();
-    } else {
-      throw new Error("Non-OK response");
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
     }
-  } catch (err) {
-    console.error("Error:", err);
-    status.hidden = false;
-    status.textContent = getString(currentLang, "contact.form.errorMessage");
-  }
-});
 
-switchLang(currentLang);
+    const data = {
+      name:    form.elements["name"].value.trim(),
+      email:   form.elements["email"].value.trim(),
+      message: form.elements["message"].value.trim(),
+    };
+
+    console.log("Sending data:", data);
+
+    try {
+      const res = await fetch("https://formspree.io/f/meedqkyj", {
+        method:  "POST",
+        headers: { "Content-Type": "application/json", "Accept": "application/json" },
+        body:    JSON.stringify(data),
+      });
+
+      console.log("Response status:", res.status);
+      console.log("Response ok:", res.ok);
+
+      const responseBody = await res.json();
+      console.log("Response body:", responseBody);
+
+      if (res.ok) {
+        status.hidden = false;
+        status.textContent = getString(currentLang, "contact.form.successMessage");
+        form.reset();
+      } else {
+        throw new Error("Non-OK response");
+      }
+    } catch (err) {
+      console.error("Error:", err);
+      status.hidden = false;
+      status.textContent = getString(currentLang, "contact.form.errorMessage");
+    }
+  });
+
+  switchLang(currentLang);
+
+});
