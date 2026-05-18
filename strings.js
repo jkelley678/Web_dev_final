@@ -25,7 +25,7 @@ const STRINGS = {
     hero: {
     greeting:     "Hi, I'm",
     name:         "Jackson Kelley",
-    tagline:      "Placeholder Placeholder Placeholder",
+    tagline:      "",
     ctaPrimary:   "View My Work",
     ctaSecondary: "Get in Touch",
     },
@@ -33,9 +33,9 @@ const STRINGS = {
       sectionLabel: "About",
       heading:      "A little about me",
       paragraphs: [
-        "Placeholder paragraph one — describe who you are, where you're from, and what drives you.",
-        "Placeholder paragraph two — talk about your background, education, or journey into your field.",
-        "Placeholder paragraph three — mention interests, side projects, or anything that makes you you.",
+        "I am a software developer student from Seattle, Washington. While I have been studying Computer Science for the past few years, I have only recently found my enjoyment for Web Development. I hope to be able to add more projects to this site, demonstrating what I have to offer. But that will come with time. ",
+        "My true love is the outdoors. Coming from the Pacific Northwest, I grew accuustomed to spending my free time hiking, camping, swimming, skiing, fishing, crabbing, shrimping; pretty much anything that has to do with nature. I am a recriational photographer, emphasis on recreational, but I hope to include some of my photos on this site in the future.",
+        "",
       ],
     },
     resume: {
@@ -51,7 +51,7 @@ const STRINGS = {
             company: "Placeholder Company",
             period:  "2021 – Current",
             bullets: [
-              "Fist sport I truly loved",
+              "First sport I truly loved",
               "Played middle blocker the entire time, although would love to be a rightside hitter",
               "Ball is Life",
             ],
@@ -61,8 +61,8 @@ const STRINGS = {
             company: "Placeholder Company",
             period:  "2018 – Current",
             bullets: [
-              "Taught me patience, happiness, dissapointment, and many other emotions",
-              "Biggest fish I ever caugh was a 47 inch lingcod. The biggest fish I lost was a 70-80lb halibut.",
+              "Taught me patience, happiness, disappointment, and many other emotions",
+              "Biggest fish I ever caught was a 47 inch lingcod. The biggest fish I lost was a 70-80lb halibut.",
             ],
           },
         ],
@@ -101,145 +101,192 @@ const STRINGS = {
     },
   },
   es: {
-    meta: {
-      siteTitle:       "Jackson Kelley",
-      siteDescription: "Sitio personal de Jackson Kelley — desarrollador, creador.",
-      lang:            "es",
-    },
-    nav: {
-      logo:         "JK",
-      home:         "Inicio",
-      about:        "Sobre mí",
-      resume:       "Currículum",
-      projects:     "Proyectos",
-      contact:      "Contacto",
-      langSwitcher: "Idioma",
-    },
-    hero: {
+  meta: {
+    siteTitle:       "Jackson Kelley",
+    siteDescription: "Sitio personal de Jackson Kelley — desarrollador, creador.",
+    lang:            "es",
+  },
+  nav: {
+    logo:         "JK",
+    home:         "Inicio",
+    about:        "Sobre mí",
+    resume:       "Currículum",
+    interests:    "Intereses",
+    contact:      "Contacto",
+    langSwitcher: "Idioma",
+  },
+  hero: {
     greeting:     "Hola, soy",
     name:         "Jackson Kelley",
-    tagline:      "Marcador Marcador Marcador",
+    tagline:      "",
     ctaPrimary:   "Ver mi trabajo",
     ctaSecondary: "Contáctame",
-    },
-    about: {
-      sectionLabel: "Sobre mí",
-      heading:      "Un poco sobre mí",
-      paragraphs: [
-        "Párrafo de marcador uno — describe quién eres, de dónde eres y qué te motiva.",
-        "Párrafo de marcador dos — habla de tu trayectoria, educación o camino en tu campo.",
-        "Párrafo de marcador tres — menciona intereses, proyectos paralelos o lo que te hace único.",
+  },
+  about: {
+    sectionLabel: "Sobre mí",
+    heading:      "Un poco sobre mí",
+    paragraphs: [
+      "Soy un estudiante de desarrollo de software de Seattle, Washington. Aunque llevo varios años estudiando Ciencias de la Computación, solo recientemente descubrí mi pasión por el Desarrollo Web. Espero poder agregar más proyectos a este sitio para demostrar lo que tengo para ofrecer. Pero eso llegará con el tiempo.",
+      "Mi verdadero amor es el aire libre. Siendo del Noroeste del Pacífico, me acostumbré a pasar mi tiempo libre haciendo senderismo, acampando, nadando, esquiando, pescando, cazando cangrejos y camarones; prácticamente cualquier cosa relacionada con la naturaleza. Soy fotógrafo recreativo, énfasis en recreativo, pero espero incluir algunas de mis fotos en este sitio en el futuro.",
+      "",
+    ],
+  },
+  resume: {
+    sectionLabel:  "Currículum",
+    heading:       "Experiencia y Educación",
+    downloadLabel: "Descargar PDF",
+    downloadHref:  "Resume.pdf",
+    PI: {
+      heading: "Intereses Personales",
+      items: [
+        {
+          role:    "Voleibol",
+          company: "",
+          period:  "2021 – Actualidad",
+          bullets: [
+            "El primer deporte que realmente amé",
+            "Jugué de bloqueador central todo el tiempo, aunque me encantaría ser atacante derecho",
+            "El balón es la vida",
+          ],
+        },
+        {
+          role:    "Pesca",
+          company: "",
+          period:  "2018 – Actualidad",
+          bullets: [
+            "Me enseñó paciencia, felicidad, decepción y muchas otras emociones",
+            "El pez más grande que pesqué fue un lingcod de 47 pulgadas. El pez más grande que perdí fue un halibut de 70-80 libras.",
+          ],
+        },
       ],
     },
-    resume: {
-      sectionLabel:  "Currículum",
-      heading:       "Experiencia y educación",
-      downloadLabel: "Descargar PDF",
-      downloadHref:  "Resume.pdf",
-      experience: {
-        heading: "Experiencia",
-        items: [
-          {
-            role:    "Puesto de marcador",
-            company: "Empresa de marcador",
-            period:  "Mes Año – Mes Año",
-            bullets: [
-              "Responsabilidad o logro de marcador uno.",
-              "Responsabilidad o logro de marcador dos.",
-              "Responsabilidad o logro de marcador tres.",
-            ],
-          },
-          {
-            role:    "Puesto de marcador",
-            company: "Empresa de marcador",
-            period:  "Mes Año – Mes Año",
-            bullets: [
-              "Responsabilidad o logro de marcador uno.",
-              "Responsabilidad o logro de marcador dos.",
-            ],
-          },
-        ],
-      },
-      albums: {
-        heading: "Álbumes favoritos",
-        items: [
-          { title: "Album Title One",   artist: "Artist Name", img: "/assets/album_1.jpeg" },
-          { title: "Album Title Two",   artist: "Artist Name", img: "/assets/album_2.jpeg" },
-          { title: "Album Title Three", artist: "Artist Name", img: "/assets/album_3.jpeg" },
-        ],
-      },
+    albums: {
+      heading: "Álbumes Favoritos",
+      items: [
+        { title: "To Pimp A Butterfly",              artist: "Kendrick Lamar",          img: "TPAB.webp"  },
+        { title: "Mushroom Sex Death Bummer Party",  artist: "Wine Lips",               img: "MSDBP.jpg"  },
+        { title: "Flee",                             artist: "The Jeremy Spencer Band", img: "Flee.jpg"   },
+      ],
     },
   },
-  de: {
-    meta: {
-      siteTitle:       "Jackson Kelley",
-      siteDescription: "Persönliche Website von Jackson Kelley — Entwickler, Gestalter, Macher.",
-      lang:            "de",
+  contact: {
+    sectionLabel: "Contacto",
+    heading:      "Hablemos",
+    subheading:   "¿Tienes una pregunta, oportunidad o simplemente quieres saludar? Envíame un mensaje.",
+    form: {
+      nameLabel:          "Nombre",
+      namePlaceholder:    "Tu nombre",
+      emailLabel:         "Correo electrónico",
+      emailPlaceholder:   "tu@correo.com",
+      messageLabel:       "Mensaje",
+      messagePlaceholder: "Tu mensaje…",
+      submitLabel:        "Enviar mensaje",
+      successMessage:     "¡Gracias! Tu mensaje ha sido enviado.",
+      errorMessage:       "Algo salió mal. Por favor inténtalo de nuevo o escríbeme directamente.",
     },
-    nav: {
-      logo:         "JK",
-      home:         "Start",
-      about:        "Über mich",
-      resume:       "Lebenslauf",
-      projects:     "Projekte",
-      contact:      "Kontakt",
-      langSwitcher: "Sprache",
-    },
-    hero: {
+  },
+  footer: {
+    copy:         "© {2026} Jackson Kelley. Todos los derechos reservados.",
+    githubUrl:    "https://github.com/jkelley678",
+    linkedinUrl:  "https://www.linkedin.com/in/jackson-kelley-880a4a255/",
+    githubLabel:  "GitHub",
+    linkedinLabel:"LinkedIn",
+  },
+},
+
+de: {
+  meta: {
+    siteTitle:       "Jackson Kelley",
+    siteDescription: "Persönliche Website von Jackson Kelley — Entwickler, Gestalter, Macher.",
+    lang:            "de",
+  },
+  nav: {
+    logo:         "JK",
+    home:         "Start",
+    about:        "Über mich",
+    resume:       "Lebenslauf",
+    interests:    "Interessen",
+    contact:      "Kontakt",
+    langSwitcher: "Sprache",
+  },
+  hero: {
     greeting:     "Hallo, ich bin",
     name:         "Jackson Kelley",
-    tagline:      "Platzhalter Platzhalter Platzhalter",
+    tagline:      "",
     ctaPrimary:   "Meine Arbeit ansehen",
     ctaSecondary: "Kontakt aufnehmen",
-    },
-    about: {
-      sectionLabel: "Über mich",
-      heading:      "Ein bisschen über mich",
-      paragraphs: [
-        "Platzhalter-Absatz eins — beschreibe, wer du bist, woher du kommst und was dich antreibt.",
-        "Platzhalter-Absatz zwei — erzähle von deinem Hintergrund, deiner Ausbildung oder deinem Weg in dein Fachgebiet.",
-        "Platzhalter-Absatz drei — erwähne Interessen, Nebenprojekte oder das, was dich einzigartig macht.",
+  },
+  about: {
+    sectionLabel: "Über mich",
+    heading:      "Ein bisschen über mich",
+    paragraphs: [
+      "Ich bin ein Softwareentwicklungsstudent aus Seattle, Washington. Obwohl ich seit einigen Jahren Informatik studiere, habe ich erst kürzlich meine Begeisterung für Webentwicklung entdeckt. Ich hoffe, diesem Projekt weitere Projekte hinzufügen zu können, um zu zeigen, was ich zu bieten habe. Aber das kommt mit der Zeit.",
+      "Meine wahre Leidenschaft ist die Natur. Da ich aus dem pazifischen Nordwesten komme, bin ich es gewohnt, meine Freizeit beim Wandern, Campen, Schwimmen, Skifahren, Angeln, Krabbenfangen und Garnelenfischen zu verbringen — im Grunde allem, was mit der Natur zu tun hat. Ich bin Freizeitfotograf, mit Betonung auf Freizeit, aber ich hoffe, in Zukunft einige meiner Fotos auf dieser Seite zu zeigen.",
+      "",
+    ],
+  },
+  resume: {
+    sectionLabel:  "Lebenslauf",
+    heading:       "Erfahrung & Ausbildung",
+    downloadLabel: "PDF herunterladen",
+    downloadHref:  "Resume.pdf",
+    PI: {
+      heading: "Persönliche Interessen",
+      items: [
+        {
+          role:    "Volleyball",
+          company: "",
+          period:  "2021 – Heute",
+          bullets: [
+            "Der erste Sport, den ich wirklich liebte",
+            "Ich spielte die ganze Zeit als Mittelblocker, wäre aber gerne Rechtshänderangreifer",
+            "Der Ball ist das Leben",
+          ],
+        },
+        {
+          role:    "Angeln",
+          company: "",
+          period:  "2018 – Heute",
+          bullets: [
+            "Es lehrte mich Geduld, Freude, Enttäuschung und viele andere Gefühle",
+            "Der größte Fisch, den ich je gefangen habe, war ein 47 Zoll langer Lingcod. Der größte Fisch, den ich verloren habe, war ein Heilbutt von 70-80 Pfund.",
+          ],
+        },
       ],
     },
-    resume: {
-      sectionLabel:  "Lebenslauf",
-      heading:       "Erfahrung & Ausbildung",
-      downloadLabel: "PDF herunterladen",
-      downloadHref:  "Resume.pdf",
-      experience: {
-        heading: "Erfahrung",
-        items: [
-          {
-            role:    "Platzhalter-Position",
-            company: "Platzhalter-Unternehmen",
-            period:  "Monat Jahr – Monat Jahr",
-            bullets: [
-              "Platzhalter Verantwortung oder Leistung eins.",
-              "Platzhalter Verantwortung oder Leistung zwei.",
-              "Platzhalter Verantwortung oder Leistung drei.",
-            ],
-          },
-          {
-            role:    "Platzhalter-Position",
-            company: "Platzhalter-Unternehmen",
-            period:  "Monat Jahr – Monat Jahr",
-            bullets: [
-              "Platzhalter Verantwortung oder Leistung eins.",
-              "Platzhalter Verantwortung oder Leistung zwei.",
-            ],
-          },
-        ],
-      },
-      albums: {
-        heading: "Lieblingsalben",
-        items: [
-          { title: "Album Title One",   artist: "Artist Name", img: "/assets/album_1.jpeg" },
-          { title: "Album Title Two",   artist: "Artist Name", img: "/assets/album_2.jpeg" },
-          { title: "Album Title Three", artist: "Artist Name", img: "/assets/album_3.jpeg" },
-        ],
-      },
+    albums: {
+      heading: "Lieblingsalben",
+      items: [
+        { title: "To Pimp A Butterfly",              artist: "Kendrick Lamar",          img: "TPAB.webp"  },
+        { title: "Mushroom Sex Death Bummer Party",  artist: "Wine Lips",               img: "MSDBP.jpg"  },
+        { title: "Flee",                             artist: "The Jeremy Spencer Band", img: "Flee.jpg"   },
+      ],
     },
   },
+  contact: {
+    sectionLabel: "Kontakt",
+    heading:      "Lass uns reden",
+    subheading:   "Hast du eine Frage, eine Gelegenheit oder möchtest einfach Hallo sagen? Schreib mir.",
+    form: {
+      nameLabel:          "Name",
+      namePlaceholder:    "Dein Name",
+      emailLabel:         "E-Mail",
+      emailPlaceholder:   "deine@email.de",
+      messageLabel:       "Nachricht",
+      messagePlaceholder: "Deine Nachricht…",
+      submitLabel:        "Nachricht senden",
+      successMessage:     "Danke! Deine Nachricht wurde gesendet.",
+      errorMessage:       "Etwas ist schiefgelaufen. Bitte versuche es erneut oder schreib mir direkt.",
+    },
+  },
+  footer: {
+    copy:         "© {2026} Jackson Kelley. Alle Rechte vorbehalten.",
+    githubUrl:    "https://github.com/jkelley678",
+    linkedinUrl:  "https://www.linkedin.com/in/jackson-kelley-880a4a255/",
+    githubLabel:  "GitHub",
+    linkedinLabel:"LinkedIn",
+  },
+},
 };
 
 export default STRINGS;
