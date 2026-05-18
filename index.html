@@ -20,7 +20,7 @@
         <ul class="nav-links" id="nav-links">
           <li><a href="#about"    data-string="nav.about">About</a></li>
           <li><a href="#resume"   data-string="nav.resume">Résumé</a></li>
-          <li><a href="#projects" data-string="nav.projects">Projects</a></li>
+          <li><a href="#resume-exp-heading" data-string="nav.interests">Interests</a></li>
           <li><a href="#contact"  data-string="nav.contact">Contact</a></li>
         </ul>
 
@@ -97,8 +97,7 @@
 
             <div>
                 <section aria-labelledby="resume-exp-heading">
-                <h3 id="resume-exp-heading" class="resume-group-heading"
-                    data-string="resume.PI.heading">Experience</h3>
+                <h3 id="resume-exp-heading" class="resume-group-heading" data-string="resume.PI.heading">Interests</h3>
                 <ol class="resume-experience">
 
                     <li class="resume-item">
@@ -157,6 +156,65 @@
             </div>
         </div>
     </section>
+    <section id="contact" class="site-section" aria-labelledby="contact-heading">
+        <div class="container">
+
+            <section-heading>
+                <span class="section-label" data-string="contact.sectionLabel">Contact</span>
+                <h2 id="contact-heading" data-string="contact.heading">Let's talk</h2>
+            </section-heading>
+
+            <contact-layout>
+
+            <contact-intro>
+                <p data-string="contact.subheading">
+                Have a question, opportunity, or just want to say hello? Send me a message.
+                </p>
+            </contact-intro>
+
+            <form id="contact-form" class="contact-form" method="POST" action="mailto:jacksonrkelley@gmail.com" enctype="text/plain">
+                <form-field>
+                <label for="contact-name" data-string="contact.form.nameLabel">Name</label>
+                <input type="text" id="contact-name" name="name" autocomplete="name" required placeholder="Your name" />
+                </form-field>
+
+                <form-field>
+                <label for="contact-email" data-string="contact.form.emailLabel">Email</label>
+                <input type="email" id="contact-email" name="email" autocomplete="email" required placeholder="your@email.com" />
+                </form-field>
+
+                <form-field>
+                <label for="contact-message" data-string="contact.form.messageLabel">Message</label>
+                <textarea id="contact-message" name="message" required placeholder="Your message…"></textarea>
+                </form-field>
+
+                <button type="submit" class="btn btn-primary" data-string="contact.form.submitLabel">
+                Send Message
+                </button>
+
+                <p id="form-status" role="status" aria-live="polite" hidden></p>
+
+            </form>
+
+            </contact-layout>
+        </div>
+        </section>
+
+        </main>
+
+        <footer class="site-footer">
+        <div class="container">
+            <p class="footer-copy" data-string="footer.copy">
+            © <span id="footer-year"></span> Jackson Kelley. All rights reserved.
+            </p>
+            <nav class="footer-links" aria-label="Social links">
+            <a href="https://github.com/jkelley678" 
+                data-string="footer.githubLabel">GitHub</a>
+            <a href="https://www.linkedin.com/in/jackson-kelley-880a4a255/" 
+                data-string="footer.linkedinLabel">LinkedIn</a>
+            </nav>
+        </div>
+        </footer>
 
 
 
