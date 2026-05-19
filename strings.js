@@ -18,7 +18,8 @@ const STRINGS = {
       home:         "Home",
       about:        "About",
       resume:       "Résumé",
-      interests:     "Interests",
+      interests:    "Interests",
+      projects:     "Projects",
       contact:      "Contact",
       weather:      "Weather",
       langSwitcher: "Language",
@@ -90,6 +91,21 @@ const STRINGS = {
           { name: "San Diego, CA",     lat: 32.7157, lon: -117.1611 },
           { name: "Seattle, WA",       lat: 47.6062, lon: -122.3321 },
           { name: "Desolation Sound",  lat: 50.0833, lon: -124.7500 },
+        ],
+      },
+      projects: {
+        sectionLabel: "Projects",
+        heading:      "Things I've built",
+        items: [
+          {
+            title:       "Personal Website",
+            description: "This site. Built with vanilla HTML, CSS, and JavaScript — no frameworks. Features a live weather widget using the Open-Meteo API, multilingual support in English, Spanish, and German, and a working contact form via Formspree.",
+            tags:        ["HTML", "CSS", "JavaScript", "Open-Meteo", "Formspree"],
+            linkLive:    "https://jacksonkelley005.jacksonrkelley.workers.dev/",
+            linkSource:  "https://github.com/jkelley678/Web_dev_final",
+            labelLive:   "Live Site",
+            labelSource: "Source Code",
+          },
         ],
       },
     contact: {

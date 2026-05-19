@@ -20,7 +20,8 @@
         <ul class="nav-links" id="nav-links">
             <li><a href="#about"    data-string="nav.about">About</a></li>
             <li><a href="resume.html"   data-string="nav.resume">Résumé</a></li>
-            <li><a href="#resume-exp-heading" data-string="nav.interests">Interests</a></li>
+            <li><a href="#interests" data-string="nav.interests">Interests</a></li>
+            <li><a href="#projects"   data-string="nav.projects">Projects</a></li>
             <li><a href="#weather"  data-string="nav.weather">Weather</a></li>
             <li><a href="#contact"  data-string="nav.contact">Contact</a></li>
         </ul>
@@ -53,7 +54,7 @@
             </p>
 
             <nav class="hero-cta" aria-label="Hero calls to action">
-                <a href="#projects" class="btn btn-primary"   data-string="hero.ctaPrimary">View My Work</a>
+                <a href="#projects" class="btn btn-primary" data-string="hero.ctaPrimary">View My Work</a>
                 <a href="#contact"  class="btn btn-secondary" data-string="hero.ctaSecondary">Get in Touch</a>
             </nav>
 
@@ -165,6 +166,37 @@
             <p class="weather-loading" data-string="weather.loading">Loading weather…</p>
             </weather-widget>
 
+        </div>
+    </section>
+    <section id="projects" class="site-section" aria-labelledby="projects-heading">
+        <div class="container">
+
+            <div class="section-heading">
+            <span class="section-label" data-string="projects.sectionLabel">Projects</span>
+            <h2 id="projects-heading" data-string="projects.heading">Things I've built</h2>
+            </div>
+
+            <ol class="projects-grid" role="list">
+
+            <li class="project-card">
+                <h3 class="project-card-title" data-string="projects.items.0.title">Personal Website</h3>
+                <p class="project-card-description" data-string="projects.items.0.description">
+                This site. Built with vanilla HTML, CSS, and JavaScript.
+                </p>
+                <ul class="project-tags" role="list">
+                <li class="project-tag" data-string="projects.items.0.tags.0">HTML</li>
+                <li class="project-tag" data-string="projects.items.0.tags.1">CSS</li>
+                <li class="project-tag" data-string="projects.items.0.tags.2">JavaScript</li>
+                <li class="project-tag" data-string="projects.items.0.tags.3">Open-Meteo</li>
+                <li class="project-tag" data-string="projects.items.0.tags.4">Formspree</li>
+                </ul>
+                <nav class="project-links" aria-label="Personal website project links">
+                <a href="https://jacksonkelley005.jacksonrkelley.workers.dev/" data-string="projects.items.0.labelLive">Live Site</a>
+                <a href="https://github.com/jkelley678/Web_dev_final" data-string="projects.items.0.labelSource">Source Code</a>
+                </nav>
+            </li>
+
+            </ol>
         </div>
         </section>
     <section id="contact" class="site-section" aria-labelledby="contact-heading">
