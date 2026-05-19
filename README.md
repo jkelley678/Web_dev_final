@@ -8,11 +8,6 @@ A personal website built with vanilla HTML, CSS, and JavaScript. No frameworks.
 - Contact form via Formspree
 - Weather data via Open-Meteo API
 
-## Running Locally
-```bash
-npx serve .
-```
-Then open http://localhost:3000
 
 ## Pages
 - `index.html` — Home (About, Interests, Projects, Weather, Contact)
@@ -31,7 +26,7 @@ The site is usable without JavaScript. All section content is present in the HTM
 Deployed on Cloudflare Pages, connected directly to this GitHub repository. Every push to `main` triggers an automatic deployment. Cloudflare Pages was chosen for its fast global CDN, automatic HTTPS, and free tier for static sites.
 
 ## Contact Form
-Form submissions are handled by Formspree, which delivers messages to the site owner's email without requiring any server-side code. The form retains a `mailto:` fallback so it remains submittable without JavaScript. Formspree also handles spam filtering and provides a submissions dashboard.
+Form submissions are handled by Formspree, which delivers messages to the site owner's email without requiring any server-side code. The form still has a `mailto:` fallback so it remains submittable without JavaScript.
 
 ## Weather Widget
 Fetches live weather data from the Open-Meteo API (`api.open-meteo.com`) for three locations — San Diego CA, Seattle WA, and Desolation Sound BC. Displays current temperature, feels-like temperature, weather condition, and wind speed. Supports a Fahrenheit/Celsius toggle. No API key required. All three locations are fetched in parallel using `Promise.all` for performance. Built as a vanilla JS module with loading and error states.
