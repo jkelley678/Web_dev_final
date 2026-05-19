@@ -217,6 +217,21 @@ es: {
       { name: "Desolation Sound", lat: 50.0833, lon: -124.7500 },
     ],
   },
+  projects: {
+  sectionLabel: "Proyectos",
+    heading:      "Cosas que he construido",
+    items: [
+      {
+        title:       "Sitio web personal",
+        description: "Este sitio. Construido con HTML, CSS y JavaScript puro — sin frameworks. Incluye un widget de clima en vivo usando la API de Open-Meteo, soporte multilingüe en inglés, español y alemán, y un formulario de contacto funcional a través de Formspree.",
+        tags:        ["HTML", "CSS", "JavaScript", "Open-Meteo", "Formspree"],
+        linkLive:    "https://jacksonkelley005.jacksonrkelley.workers.dev/",
+        linkSource:  "https://github.com/jkelley678/Web_dev_final",
+        labelLive:   "Sitio en vivo",
+        labelSource: "Código fuente",
+      },
+    ],
+  },
   contact: {
     sectionLabel: "Contacto",
     heading:      "Hablemos",
@@ -324,6 +339,21 @@ de: {
       { name: "San Diego, CA",    lat: 32.7157, lon: -117.1611 },
       { name: "Seattle, WA",      lat: 47.6062, lon: -122.3321 },
       { name: "Desolation Sound", lat: 50.0833, lon: -124.7500 },
+    ],
+  },
+  projects: {
+    sectionLabel: "Projekte",
+    heading:      "Was ich gebaut habe",
+    items: [
+      {
+        title:       "Persönliche Website",
+        description: "Diese Seite. Erstellt mit reinem HTML, CSS und JavaScript — ohne Frameworks. Enthält ein Live-Wetter-Widget über die Open-Meteo-API, mehrsprachige Unterstützung auf Englisch, Spanisch und Deutsch sowie ein funktionierendes Kontaktformular über Formspree.",
+        tags:        ["HTML", "CSS", "JavaScript", "Open-Meteo", "Formspree"],
+        linkLive:    "https://jacksonkelley005.jacksonrkelley.workers.dev/",
+        linkSource:  "https://github.com/jkelley678/Web_dev_final",
+        labelLive:   "Live-Seite",
+        labelSource: "Quellcode",
+      },
     ],
   },
   contact: {
