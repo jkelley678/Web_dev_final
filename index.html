@@ -19,7 +19,7 @@
 
         <ul class="nav-links" id="nav-links">
             <li><a href="#about"    data-string="nav.about">About</a></li>
-            <li><a href="#resume"   data-string="nav.resume">Résumé</a></li>
+            <li><a href="resume.html"   data-string="nav.resume">Résumé</a></li>
             <li><a href="#resume-exp-heading" data-string="nav.interests">Interests</a></li>
             <li><a href="#weather"  data-string="nav.weather">Weather</a></li>
             <li><a href="#contact"  data-string="nav.contact">Contact</a></li>
@@ -83,86 +83,76 @@
         </div>
     </div>
     </section>
-    <section id="resume" class="site-section" aria-labelledby="resume-heading">
-        <div class="container">
+    <section id="interests" class="site-section" aria-labelledby="interests-heading">
+  <div class="container">
 
-            <div class="section-heading">
-            <span class="section-label" data-string="resume.sectionLabel">Résumé</span>
-            <h2 id="resume-heading" data-string="resume.heading">Experience &amp; Education</h2>
-            </div>
+    <div class="section-heading">
+      <span class="section-label" data-string="nav.interests">Interests</span>
+      <h2 id="interests-heading" data-string="resume.PI.heading">Personal Interests</h2>
+    </div>
 
-            <a href="Resume.pdf" class="btn btn-secondary resume-download"
-            data-string="resume.downloadLabel" download>Download PDF</a>
+    <ol class="resume-experience">
 
-            <div class="resume-layout">
-
-            <div>
-                <section aria-labelledby="resume-exp-heading">
-                <h3 id="resume-exp-heading" class="resume-group-heading" data-string="resume.PI.heading">Interests</h3>
-                <ol class="resume-experience">
-
-                    <li class="resume-item">
-                    <div class="resume-item-header">
-                        <span class="resume-item-role"   data-string="resume.PI.items.0.role">Placeholder Interest</span>
-                        <span class="resume-item-period"  data-string="resume.PI.items.0.period">Month Year – Month Year</span>
-                    </div>
-                    <ul class="resume-item-bullets">
-                        <li data-string="resume.PI.items.0.bullets.0">Placeholder one.</li>
-                        <li data-string="resume.PI.items.0.bullets.1">Placeholder two.</li>
-                        <li data-string="resume.PI.items.0.bullets.2">Placeholder three.</li>
-                    </ul>
-                    </li>
-
-                    <li class="resume-item">
-                    <div class="resume-item-header">
-                        <span class="resume-item-role"   data-string="resume.PI.items.1.role">Placeholder Interest</span>
-                        <span class="resume-item-period"  data-string="resume.PI.items.1.period">Month Year – Month Year</span>
-                    </div>
-                    <ul class="resume-item-bullets">
-                        <li data-string="resume.PI.items.1.bullets.0">Placeholder one.</li>
-                        <li data-string="resume.PI.items.1.bullets.1">Placeholder two.</li>
-                    </ul>
-                    </li>
-
-                </ol>
-                </section>
-
-                <section aria-labelledby="resume-albums-heading" style="margin-top: var(--space-xl);">
-                    <h3 id="resume-albums-heading" class="resume-group-heading"
-                        data-string="resume.albums.heading">Favorite Albums</h3>
-
-                    <div class="album-grid">
-
-                        <div class="album-item">
-                            <a href="https://www.youtube.com/watch?v=l9fN-8NjrvI&list=PL8YH4mOwWryUO4kxV36tPqkiaAr4_oJe5">
-                                <img src="TPAB.webp" alt="To Pimp A Butterfly" loading="lazy" width="300" height="300" data-string-alt="resume.albums.items.0.title" />
-                            </a>
-                            <p class="album-title"  data-string="resume.albums.items.0.title">To Pimp A Butterfly</p>
-                            <p class="album-artist" data-string="resume.albums.items.0.artist">Kendrick Lamar</p>
-                        </div>
-
-                        <div class="album-item">
-                            <a href="https://www.youtube.com/watch?v=h5MERz1bj9s&list=OLAK5uy_mtZrq9YDa0_ZA7qZL7GSOb4RwdwLgWwgU">
-                                <img src="MSDBP.jpg" alt="Mushroom Sex Death Bummer Party" loading="lazy" width="300" height="300" data-string-alt="resume.albums.items.1.title" />
-                            </a>
-                            <p class="album-title"  data-string="resume.albums.items.1.title">Mushroom Sex Death Bummer Party</p>
-                            <p class="album-artist" data-string="resume.albums.items.1.artist">Wine Lips</p>
-                        </div>
-
-                        <div class="album-item">
-                            <a href="https://www.youtube.com/watch?v=aWnn0xCUZ9o&list=PLGdGQTI36H_AWwTZUweWDf7WI9qd-a6_Q">
-                                <img src="Flee.jpg" alt="Flee" loading="lazy" width="300" height="300" data-string-alt="resume.albums.items.2.title" />
-                            </a>
-                            <p class="album-title"  data-string="resume.albums.items.2.title">Flee</p>
-                        <p class="album-artist" data-string="resume.albums.items.2.artist">The Jeremy Spencer Band</p>
-                        </div>
-
-                    </div>
-                    </section>
-                </div>
-            </div>
+      <li class="resume-item">
+        <div class="resume-item-header">
+          <span class="resume-item-role"  data-string="resume.PI.items.0.role">Placeholder Interest</span>
+          <span class="resume-item-period" data-string="resume.PI.items.0.period">Month Year – Month Year</span>
         </div>
+        <ul class="resume-item-bullets">
+          <li data-string="resume.PI.items.0.bullets.0">Placeholder one.</li>
+          <li data-string="resume.PI.items.0.bullets.1">Placeholder two.</li>
+          <li data-string="resume.PI.items.0.bullets.2">Placeholder three.</li>
+        </ul>
+      </li>
+
+      <li class="resume-item">
+        <div class="resume-item-header">
+          <span class="resume-item-role"  data-string="resume.PI.items.1.role">Placeholder Interest</span>
+          <span class="resume-item-period" data-string="resume.PI.items.1.period">Month Year – Month Year</span>
+        </div>
+        <ul class="resume-item-bullets">
+          <li data-string="resume.PI.items.1.bullets.0">Placeholder one.</li>
+          <li data-string="resume.PI.items.1.bullets.1">Placeholder two.</li>
+        </ul>
+      </li>
+
+    </ol>
+
+    <section aria-labelledby="resume-albums-heading" style="margin-top: var(--space-xl);">
+      <h3 id="resume-albums-heading" class="resume-group-heading"
+          data-string="resume.albums.heading">Favorite Albums</h3>
+
+      <div class="album-grid">
+
+        <div class="album-item">
+          <a href="https://www.youtube.com/watch?v=l9fN-8NjrvI&list=PL8YH4mOwWryUO4kxV36tPqkiaAr4_oJe5" target="_blank" rel="noopener noreferrer">
+            <img src="TPAB.webp" alt="To Pimp A Butterfly" loading="lazy" width="300" height="300" />
+          </a>
+          <p class="album-title"  data-string="resume.albums.items.0.title">To Pimp A Butterfly</p>
+          <p class="album-artist" data-string="resume.albums.items.0.artist">Kendrick Lamar</p>
+        </div>
+
+        <div class="album-item">
+          <a href="https://www.youtube.com/watch?v=h5MERz1bj9s&list=OLAK5uy_mtZrq9YDa0_ZA7qZL7GSOb4RwdwLgWwgU" target="_blank" rel="noopener noreferrer">
+            <img src="MSDBP.jpg" alt="Mushroom Sex Death Bummer Party" loading="lazy" width="300" height="300" />
+          </a>
+          <p class="album-title"  data-string="resume.albums.items.1.title">Mushroom Sex Death Bummer Party</p>
+          <p class="album-artist" data-string="resume.albums.items.1.artist">Wine Lips</p>
+        </div>
+
+        <div class="album-item">
+          <a href="https://www.youtube.com/watch?v=aWnn0xCUZ9o&list=PLGdGQTI36H_AWwTZUweWDf7WI9qd-a6_Q" target="_blank" rel="noopener noreferrer">
+            <img src="Flee.jpg" alt="Flee" loading="lazy" width="300" height="300" />
+          </a>
+          <p class="album-title"  data-string="resume.albums.items.2.title">Flee</p>
+          <p class="album-artist" data-string="resume.albums.items.2.artist">The Jeremy Spencer Band</p>
+        </div>
+
+      </div>
     </section>
+
+  </div>
+</section>
     <section id="weather" class="site-section" aria-labelledby="weather-heading">
         <div class="container">
 

@@ -272,7 +272,7 @@ ul, ol { list-style: none; }
 .resume-item-bullets li { 
     font-size: var(--text-sm); 
 }
-/* Contact */
+
 contact-layout {
   display: grid;
   grid-template-columns: 1fr;
@@ -329,7 +329,7 @@ form-field textarea {
   resize: vertical;
 }
 
-/* Footer */
+
 .site-footer {
   border-top: var(--border-width) solid var(--color-border);
   padding-block: var(--space-lg);
@@ -361,7 +361,7 @@ form-field textarea {
 
 .footer-links a:hover { color: var(--color-text); }
 
-/* Weather widget */
+
 weather-widget {
   display: block;
 }
@@ -436,4 +436,18 @@ weather-widget {
 
 .weather-error {
   color: #cc0000;
+}
+
+.resume-embed {
+  width: 100%;
+  height: 80vh;
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.resume-embed-fallback {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  padding: var(--space-md);
 }
